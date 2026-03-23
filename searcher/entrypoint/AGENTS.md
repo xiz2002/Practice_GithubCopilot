@@ -20,6 +20,7 @@
 Controller, Router, Handler 파일을 전수 탐색하여 API 엔드포인트를 추출합니다.
 
 - 모든 HTTP Method와 Path를 수집합니다.
+- 각 엔드포인트에 대응하는 Controller 클래스명과 함수명을 함께 기록합니다.
 - 분기 파라미터(typeCode, type, command, action, kind 등)가 존재하는 엔드포인트는 각 분기값을 독립 오퍼레이션으로 등록합니다.
   - if/switch/when 구문으로 다른 Service를 호출하는 구조
   - Strategy/Command 패턴으로 실행 클래스가 결정되는 구조
